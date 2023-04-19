@@ -1,34 +1,40 @@
-{
-    "books":[
-           {
-		     "bookid": 001,
-			 "title": "Wings of fire",
+[
+    {
+    "books":
+    [
+        {
+            "bookid": 10001,
+            "title": "Wings of fire",
 			 "price": 1500
-			},
-			{
-		     "bookid": 002,
+
+        },
+        {
+		     "bookid": 20001,
 			 "title": "Geetanjali",
 			 "price": 1500
 			},
 			{
-		     "bookid": 003,
+		     "bookid": 30001,
 			 "title": "Chitra",
 			 "price": 1500
 			}
-			]
-	"auther": 
+    ]
+    },
+    {
+    	"auther": 
 	        [
 			  {
-			    "bookid": 001,
+			    "bookid":10001,
 				"author":"Dr. A. P. J. Abdul Kalam"
 			  },
 			  {
-			    "bookid": 002,
+			    "bookid": 20001,
 				"author":"Dr. Rabindra Nath Tagore"
 			  },
 			  {
-			    "bookid": 003,
+			    "bookid": 30001,
 				"author":"Dr. Rabindra Nath Tagore"
 			  }
 			]
-}
+    }
+]
