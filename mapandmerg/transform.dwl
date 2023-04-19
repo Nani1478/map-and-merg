@@ -33,7 +33,8 @@ var book = [
 			  }
     ]
 ---
-book map(v,i) ->using (id=v.bookid){
+                        //using variables//
+/*book map(v,i) ->using (id=v.bookid){
     "BookId": id,
     "BookTitle": v.title,
     "cost": v.price,
@@ -41,4 +42,15 @@ book map(v,i) ->using (id=v.bookid){
        map(item) ->{
            auther : item.author
        })
-}
+}*/
+                 //usig input payload//  
+ flatten(payload.books) map(v,i) ->using (id=v.bookid)
+ {
+      "BookId": id,
+    "BookTitle": v.title,
+    "cost": v.price,
+    ((flatten(payload.auther)) filter ($.*bookid contains id)
+    map(item)->{
+          auther: item.author
+    })
+ }
